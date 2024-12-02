@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "clean": "npx rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts",
-    "serve": "node dist/index.js"
+    "run:dev": "ts-node src/app.ts",
+    "run:prod": "node dist/app.js"
   },
   "author": "J. Drill",
   "license": "ISC",
